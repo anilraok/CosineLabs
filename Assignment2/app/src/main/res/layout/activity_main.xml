@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anilraok.assignment2.screens.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/wifi_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/wifi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/wifi_name"/>
+
+        <TextView
+            android:id="@+id/wifi_ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wifi_name"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/wifi_ip"/>
+
+        <TextView
+            android:id="@+id/devices_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Devices"
+            android:layout_below="@+id/wifi_ip_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/wifi_ip"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/devices_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devices_title">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/no_devices_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devices_title"
+            android:text="No devices in the network"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/no_wifi_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/no_wifi_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="@string/no_wifi_connection"/>
+    </RelativeLayout>
+
+</RelativeLayout>

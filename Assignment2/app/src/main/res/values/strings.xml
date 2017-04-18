@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Assignment 2</string>
+    <string name="no_wifi_connection">Not connected to wifi</string>
+</resources>

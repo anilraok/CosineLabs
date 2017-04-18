@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wifi_name">18sp</dimen>
+    <dimen name="wifi_ip">16sp</dimen>
+</resources>
